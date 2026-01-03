@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prakash Kumar G - IoT Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Animated Circuit Background -->
+    <canvas id="circuit-canvas"></canvas>
+    
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-text">&lt;PK/&gt;</span>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#education" class="nav-link">Education</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="theme-switcher" id="theme-switcher">
+                <button class="theme-btn" id="theme-btn">
+                    <i class="fas fa-palette"></i>
+                </button>
+                <div class="theme-menu" id="theme-menu">
+                    <div class="theme-option" data-theme="iot-dark">
+                        <div class="theme-preview theme-iot-dark"></div>
+                        <span>IoT Dark</span>
+                    </div>
+                    <div class="theme-option" data-theme="purple-haze">
+                        <div class="theme-preview theme-purple-haze"></div>
+                        <span>Purple Haze</span>
+                    </div>
+                    <div class="theme-option" data-theme="ocean-blue">
+                        <div class="theme-preview theme-ocean-blue"></div>
+                        <span>Ocean Blue</span>
+                    </div>
+                    <div class="theme-option" data-theme="forest-green">
+                        <div class="theme-preview theme-forest-green"></div>
+                        <span>Forest Green</span>
+                    </div>
+                    <div class="theme-option" data-theme="sunset-orange">
+                        <div class="theme-preview theme-sunset-orange"></div>
+                        <span>Sunset Orange</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-left">
+                <div class="hero-text">
+                    <div class="greeting">
+                        <span class="wave">👋</span> Hello, I'm
+                    </div>
+                    <h1 class="hero-name">Prakash Kumar G</h1>
+                    <h2 class="hero-title">
+                        <span class="typed-text"></span>
+                        <span class="cursor">&nbsp;</span>
+                    </h2>
+                    <p class="hero-description">
+                        Bridging the gap between hardware and software to create innovative IoT solutions
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn btn-primary">
+                            <i class="fas fa-envelope"></i> Get In Touch
+                        </a>
+                        <a href="assets/Prakash kumar resume.pdf" download class="btn btn-secondary">
+                            <i class="fas fa-download"></i> Download CV
+                        </a>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://github.com/Prakashkumar08" target="_blank" class="social-link" title="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/prakash-kumar-13b13725a" target="_blank" class="social-link" title="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://mail.google.com/mail/?view=cm&to=prakashkumarg0821@gmail.com&su=Portfolio%20Inquiry" class="social-link" title="Compose Email in Gmail" target="_blank" rel="noopener" aria-label="Open Gmail compose to email prakashkumarg0821@gmail.com">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                        <a href="tel:+916383482408" class="social-link" title="Phone">
+                            <i class="fas fa-phone"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-right">
+                <div class="profile-container">
+                    <div class="profile-border">
+                        <div class="profile-image">
+                            <img src="assets/profile.png" alt="Prakash Kumar G">
+                        </div>
+                        <div class="iot-rings">
+                            <div class="ring ring-1"></div>
+                            <div class="ring ring-2"></div>
+                            <div class="ring ring-3"></div>
+                        </div>
+                    </div>
+                    <div class="floating-icons">
+                        <div class="icon-item icon-1"><i class="fas fa-microchip"></i></div>
+                        <div class="icon-item icon-2"><i class="fas fa-wifi"></i></div>
+                        <div class="icon-item icon-3"><i class="fas fa-server"></i></div>
+                        <div class="icon-item icon-4"><i class="fas fa-cloud"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <div class="title-underline"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="about-description">
+                        I am an IoT Developer with expertise in designing and developing smart, connected solutions 
+                        that bridge the gap between hardware and software. Passionate about embedded systems, 
+                        automation, and cloud integration, I specialize in building innovative IoT applications 
+                        for industries such as healthcare, agriculture, and home automation.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <div class="stat-number" data-target="7.58">0</div>
+                            <div class="stat-label">CGPA</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-target="5">0</div>
+                            <div class="stat-label">Skills</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-target="1">0</div>
+                            <div class="stat-label">Projects</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section experience-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Work Experience</h2>
+                <div class="title-underline"></div>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">July 2024 - August 2024</div>
+                        <h3 class="timeline-title">IoT Developer Intern</h3>
+                        <h4 class="timeline-company">Enthu Technology Solutions</h4>
+                        <ul class="timeline-description">
+                            <li>Understanding various IoT applications, such as smart homes, industrial automation, and healthcare</li>
+                            <li>Working with various sensors (e.g., temperature, humidity, motion) and integrating them with IoT devices</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section education-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Education</h2>
+                <div class="title-underline"></div>
+            </div>
+            <div class="education-grid">
+                <div class="education-card">
+                    <div class="education-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3 class="education-degree">Bachelor of Engineering (IoT)</h3>
+                    <h4 class="education-school">Paavai Engineering College</h4>
+                    <div class="education-date">Nov 2022 - May 2026</div>
+                    <div class="education-grade">CGPA: 7.58</div>
+                    <p class="education-description">
+                        Specialized in IoT, Cloud Computing and Embedded systems
+                    </p>
+                </div>
+                <div class="education-card">
+                    <div class="education-icon">
+                        <i class="fas fa-school"></i>
+                    </div>
+                    <h3 class="education-degree">Higher Secondary Education (HSC)</h3>
+                    <h4 class="education-school">St.Joseph's Matric.Hr.Sec.School</h4>
+                    <div class="education-date">June 2020 - April 2022</div>
+                    <div class="education-grade">Percentage: 78%</div>
+                    <p class="education-description">
+                        Built a strong foundation in Mathematics and Computer Science
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section projects-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Projects</h2>
+                <div class="title-underline"></div>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <i class="fas fa-water"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-date">November 2024</div>
+                        <h3 class="project-title">Smart IoT Driven Surface Water Waste Collection Management</h3>
+                        <p class="project-description">
+                            IoT-based waste management system for surface water collection. 
+                            Designed to monitor and manage waste collection efficiently using IoT sensors and cloud integration.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">IoT</span>
+                            <span class="tag">Sensors</span>
+                            <span class="tag">Cloud</span>
+                            <span class="tag">Automation</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section skills-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Technical Skills</h2>
+                <div class="title-underline"></div>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-info">
+                        <span class="skill-name">Python</span>
+                        <span class="skill-percentage">75%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="75"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-info">
+                        <span class="skill-name">Arduino/ESP32</span>
+                        <span class="skill-percentage">90%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="90"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-info">
+                        <span class="skill-name">Embedded C/C++</span>
+                        <span class="skill-percentage">85%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="85"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-info">
+                        <span class="skill-name">IoT Protocols</span>
+                        <span class="skill-percentage">75%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="75"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-info">
+                        <span class="skill-name">Blynk/Thingspeak</span>
+                        <span class="skill-percentage">70%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="70"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-info">
+                        <span class="skill-name">Cloud Computing</span>
+                        <span class="skill-percentage">75%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="75"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="title-underline"></div>
+                <p class="section-subtitle">Feel free to reach out for collaborations or just a friendly hello</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-form-container">
+                    <form id="contact-form" class="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-send">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                    </form>
+                    <p class="form-note">Note: Clicking "Send Message" will open Gmail in a new tab with your message pre-filled. Simply click send to complete.</p>
+                </div>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <a href="https://mail.google.com/mail/?view=cm&to=prakashkumarg0821@gmail.com&su=Portfolio%20Inquiry" target="_blank" rel="noopener">prakashkumarg0821@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Phone</h4>
+                            <a href="tel:+916383482408">+91 6383482408</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-github"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>GitHub</h4>
+                            <a href="https://github.com/Prakashkumar08" target="_blank">@Prakashkumar08</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-linkedin"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>LinkedIn</h4>
+                            <a href="https://www.linkedin.com/in/prakash-kumar-13b13725a" target="_blank">Prakash Kumar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Prakash Kumar G. All rights reserved.</p>
+            <p>Designed with <i class="fas fa-heart"></i> and IoT passion</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
