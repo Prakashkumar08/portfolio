@@ -116,7 +116,7 @@ window.addEventListener('scroll', () => {
 
 // Typing Effect
 const typedTextSpan = document.querySelector('.typed-text');
-const textArray = ['IoT Developer', 'Embedded Systems Engineer', 'Hardware Enthusiast', 'Cloud Integrator'];
+const textArray = ['IoT Developer','Cloud Integrator'];
 const typingDelay = 100;
 const erasingDelay = 50;
 const newTextDelay = 2000;
@@ -471,3 +471,4 @@ if (circles.length > 0) {
 console.log('%c👋 Hello, Fellow Developer!', 'color: #00d9ff; font-size: 20px; font-weight: bold;');
 console.log('%cLooking for something? Feel free to reach out!', 'color: #7b2ff7; font-size: 14px;');
 console.log('%cEmail: prakashkumarg0821@gmail.com', 'color: #b8b8b8; font-size: 12px;');
+
